@@ -1,0 +1,215 @@
+\documentclass{if-beamer}
+\usepackage{ctex}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\usefonttheme[onlymath]{serif}
+
+% --------------------------------------------------- %
+%                  Presentation info	              %
+% --------------------------------------------------- %
+\title[平衡态统计物理讨论班]{有了玻尔兹曼方程之后我们能做些什么}
+\subtitle{基于玻尔兹曼方程的推导计算\&热寂说\&一些视时间而定的内容}
+\author{钱思天}
+\institute[PKU]{
+  Peking University
+}
+\date{\today}
+
+\subject{Presentation subject} % metadata
+
+\graphicspath{{figuras/}}
+% --------------------------------------------------- %
+%                    Title + Schedule                 %
+% --------------------------------------------------- %
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{目录}
+  \tableofcontents
+\end{frame}
+
+% --------------------------------------------------- %
+%                      Presentation                   %
+% --------------------------------------------------- %
+\section{玻尔兹曼方程}
+\begin{frame}{玻尔兹曼方程}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+    
+    \begin{block}{从玻尔兹曼方程出发我们可以……}
+        \begin{description}
+            \item [细致平衡条件与平衡分布：] 如何从玻尔兹曼方程到平衡态分布函数；
+            \item [H与熵：]H函数与熵是否存在一定的关系；
+            \item [弛豫时间近似及应用：]如何将玻尔兹曼方程的从微分积分方程进行化简；
+            \item [经典输运：]利用玻尔兹曼方程进行计算；
+            \item [……]
+        \end{description}  
+    \end{block}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{alertblock}{注意：玻尔兹曼方程的适用条件}
+    在推导玻尔兹曼方程时我们假设：
+\begin{itemize}
+    \item 假定是经典稀薄气体，分子力是短程的．
+    \item 把分布函数的变化分成漂移项和碰撞项两部分，在计算
+    漂移项时，不考虑分子之间的相互作用和碰撞；而在计算碰撞项
+    时，也完全不考虑分子在外力作用下的运动．
+    \item 只考虑二体碰撞．
+    \item 忽略分子的内部结构．
+    \item 在计算元碰撞与元反碰撞数时，引入分子混沌性假设．
+\end{itemize}
+    
+\end{alertblock}
+    
+\end{column}
+
+
+
+
+\end{columns}
+\end{frame}
+\subsection{细致平衡条件与平衡分布}
+\begin{frame}{细致平衡条件与平衡分布}
+    通过H定理我们知道，系统的平衡由细致平衡条件所保证。
+    因此，从细致平衡条件出发，我们应当能够推导出平衡态分布函数。并且这个分布函数必须是唯一的。
+\end{frame}
+\begin{frame}
+    \frametitle{推导}
+        \begin{block}{细致平衡条件}
+            \begin{equation*}
+                \begin{aligned}
+                    f_1f_2&=f_1'f_2'\\
+                    \ln{f_1}+\ln{f_2}&=\ln{f_1'}+\ln{f_2'}
+                \end{aligned}
+            \end{equation*}
+        \end{block}
+        \begin{block}{}
+            取对数后的细致平衡条件有着碰撞守恒的性质，而碰撞前后守恒量有且只有$1,m\vec{v},E$，因此，对数分布函数只能够写成他们的线性组合。
+            \begin{equation*}
+                \begin{aligned}
+                    \ln{f}&=\alpha_0+\sum_{i=1}^{3}{\alpha_imv_i}+\alpha_4\frac12mv^2\\
+                    f&=c_0\exp{-c_4\frac12m(\vec{v}-\vec{c})}
+                \end{aligned}
+            \end{equation*}
+            系数$c_0,\vec{c}=(c_1,c_2,c_3),c_4$替换自各$\alpha_i$。
+        \end{block}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{推导}
+        \begin{block}{}
+            系数$c_0,\vec{c}=(c_1,c_2,c_3),c_4$可以如下确定下来：
+            \begin{equation*}
+                \begin{aligned}
+                n&=\int f(\vec{v}) \mathrm{d}^{3} \vec{v}\\ 
+                \vec{v}_{0}&=\frac{1}{n} \int \vec{v} f(\vec{v}) \mathrm{d}^{3} \vec{v}\\ 
+                \frac{3}{2} k T&=\frac{1}{n} \int \frac{m}{2}\left(\vec{v}-\vec{v}_{0}\right)^{2} f(\vec{v}) \mathrm{d}^{3} \vec{v}
+                \end{aligned}
+            \end{equation*}
+        式中$\vec{v_0}$是系统的整体平动速率。
+        \end{block}
+        \begin{block}{}
+        最终可得分布函数如下：
+        \begin{equation*}
+            f=n\left(\frac{m}{2 \pi k T}\right)^{3 / 2} \exp \left\{-\frac{m}{2 k T}\left(\vec{v}-\vec{v}_{0}\right)^{2}\right\}
+        \end{equation*}
+        这正是麦克斯韦速度分布率。
+        \end{block}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{Beyond previous set-up}
+一般来说，如果体系某一元过程能够与它相反的元过程相互抵消，我们就可以称之为该体系达到了细致平衡，并且把“总体平衡的充要条件是细致平衡”称为细致平衡原理。
+在许多比我们模型预设的复杂的多的体系中，细致平衡原理都是成立的。举例来说，爱因斯坦据此推导出了普朗克辐射公式。
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{Beyond previous set-up}
+    \begin{block}
+        {存在外场或存在宏观流动时，仍然可以利用细致平衡原理计算分布函数。}
+            平衡态要求分布函数不依赖于时间：
+            \begin{equation*}
+                \frac{\partial f}{\partial{t}}=0
+            \end{equation*}
+            根据细致平衡原理，碰撞项为零。可得运动项也为零。
+            \begin{equation*}
+                \vec{v}\cdot\nabla_{\vec{r}}{f}+\vec{F}\cdot\nabla_{\vec{v}}{f}=0
+            \end{equation*}
+    \end{block}
+
+
+\end{frame}
+    
+\subsection{H函数与熵}
+\begin{frame}
+    \frametitle{H函数与熵}
+        H定理和熵增原理看起来似乎有着一样的形式
+        是否在H函数与熵中存在某种关系？
+        
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{H函数就是“熵”}
+        事实上，在平衡态下，H函数的确给出了熵。在稀薄气体的前提（也是我们模型的预设）下，有$S\propto(-H+const.)$。                                                                                                                                                                                                                                                                          
+        
+    
+
+\end{frame}
+
+\subsection{弛豫时间近似及应用}
+\begin{frame}
+    \frametitle{回顾局域平衡}
+    在之前的有关近平衡态统计的报告中已经有关于局域平衡的基本介绍。
+    \begin{block}
+        {局域平衡}
+        整个系统虽然处于非平衡态，能够随时间演化，但是系统的各个小局域（宏观小微观大）可以近似认为平衡，能够用热力学变量描述，也可以定义分布函数。
+    \end{block}
+    \begin{block}
+        {条件}
+        系统的整体弛豫时间远大于局域的弛豫时间。
+    \end{block}
+    
+\end{frame}
+\begin{frame}
+    \frametitle{弛豫时间近似}
+        玻尔兹曼方程的原始形式过于复杂而且非线性。但是，如果在靠近平衡态的非平衡态附近，可以将碰撞项利用弛豫时间进行如下的线性化近似。
+    
+        弛豫时间近似可以有效的解释一系列输运现象。
+\end{frame}
+\begin{frame}
+    \frametitle{粘滞流体的牛顿定律}
+
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{自由电子气电导率}
+\end{frame}
+\section{热寂说}
+\subsection{为什么会热寂？}
+\begin{frame}
+    \frametitle{热寂说的理论依据}
+
+    
+
+\end{frame}
+
+\section{如果到这还有很长时间……}
+
+
+\end{document}

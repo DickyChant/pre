@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{玻尔兹曼方程}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{细致平衡条件与平衡分布}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{H函数与熵}{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{弛豫时间近似及应用}{12}{0}{1}
+\beamer@sectionintoc {2}{热寂说}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{为什么会热寂？}{17}{0}{2}
+\beamer@sectionintoc {3}{如果到这还有很长时间……}{18}{0}{3}
