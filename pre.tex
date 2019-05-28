@@ -131,14 +131,14 @@
 
 \end{frame}
 \begin{frame}
-    \frametitle{Beyond previous set-up}
+    \frametitle{推导}
 一般来说，如果体系某一元过程能够与它相反的元过程相互抵消，我们就可以称之为该体系达到了细致平衡，并且把“总体平衡的充要条件是细致平衡”称为细致平衡原理。
 在许多比我们模型预设的复杂的多的体系中，细致平衡原理都是成立的。举例来说，爱因斯坦据此推导出了普朗克辐射公式。
     
 
 \end{frame}
 \begin{frame}
-    \frametitle{Beyond previous set-up}
+    \frametitle{推导}
     \begin{block}
         {存在外场或存在宏观流动时，仍然可以利用细致平衡原理计算分布函数。}
             平衡态要求分布函数不依赖于时间：
@@ -189,16 +189,26 @@
     \frametitle{弛豫时间近似}
         玻尔兹曼方程的原始形式过于复杂而且非线性。但是，如果在靠近平衡态的非平衡态附近，可以将碰撞项利用弛豫时间进行如下的线性化近似。
     
-        弛豫时间近似可以有效的解释一系列输运现象。
+        弛豫时间近似可以有效的解释一系列输运现象，例如流体的粘滞现象，以及二维电子气的电导率和热导率。
 \end{frame}
 \begin{frame}
     \frametitle{粘滞流体的牛顿定律}
+        考虑以宏观速度$v_0$向$y$方向流动的流体，并且假定这个流动的宏观速度只与$x$有关，即$v_0=v_0(x)$，我们有牛顿粘滞定律：
+        \begin{equation*}
+            f_{xy}=\eta\frac{dv_0(x)}{dx}
+        \end{equation*}
+        粘性的来源是动量输运
+        \begin{equation*}
+            p_{xy}=-\int{f\cdot mv_1v_2\mathrm{d}^3\vec{v}}
+        \end{equation*}
+        局域平衡下，零级分布函数可写为：
 
-    
+        利用迟豫时间近似，得到一级分布函数，
 
 \end{frame}
 \begin{frame}
     \frametitle{自由电子气电导率}
+    
 \end{frame}
 \section{热寂说}
 \subsection{为什么会热寂？}
