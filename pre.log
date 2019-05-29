@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.9.5)  29 MAY 2019 17:50
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.9.5)  29 MAY 2019 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2068,7 +2068,7 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \vbox (2.49141pt too high) detected at line 342
+Overfull \vbox (2.49141pt too high) detected at line 341
  []
 
 
@@ -2107,7 +2107,7 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \vbox (12.11867pt too high) detected at line 413
+Overfull \vbox (12.11867pt too high) detected at line 412
  []
 
 
@@ -2134,11 +2134,11 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `pre.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
  (./pre.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `pre.out' has not changed.
 (rerunfilecheck)             Checksum: 79EA3DDCFFD10C80ADC1923DDB8887A4.
  ) 
