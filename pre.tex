@@ -195,20 +195,62 @@
     \frametitle{粘滞流体的牛顿定律}
         考虑以宏观速度$v_0$向$y$方向流动的流体，并且假定这个流动的宏观速度只与$x$有关，即$v_0=v_0(x)$，我们有牛顿粘滞定律：
         \begin{equation*}
-            f_{xy}=\eta\frac{dv_0(x)}{dx}
+            p_{xy}=\eta\frac{dv_0(x)}{dx}
         \end{equation*}
         粘性的来源是动量输运
         \begin{equation*}
             p_{xy}=-\int{f\cdot mv_1v_2\mathrm{d}^3\vec{v}}
         \end{equation*}
         局域平衡下，零级分布函数可写为：
+        \begin{equation*}
+            f^{(0)}=n\left(\frac{m}{2 \pi k_{B} T}\right)^{3 / 2} \exp \left(-\frac{m}{2 k_{B} T}\left[v_{1}^{2}+\left(v_{2}-v_{0}(x)\right)^{2}+v_{3}^{2}\right]\right)
+        \end{equation*}
+        取分布函数至一阶：
+        \begin{equation*}
+            f=f^{(0)}+f^{(1)},f^{(1)}<<f^{(0)}
+        \end{equation*}
+        带入弛豫时间近似下玻尔兹曼方程，可得：
+        \begin{equation*}
+            f^{(1)}=\tau_{0} v_{1} \frac{\partial f^{(0)}}{\partial v_{2}} \frac{d v_{0}}{d x}
+        \end{equation*}
 
-        利用迟豫时间近似，得到一级分布函数，
+
+\end{frame}
+\begin{frame}
+    \frametitle{粘滞流体的牛顿定律}
+        代入动量输运表达式，比较系数，可得：
+        \begin{equation*}
+            \eta=-m \int v_{1}^{2} v_{2} \tau_{0} \frac{\partial f^{(0)}}{\partial v_{2}} d \vec{v}
+        \end{equation*}
+        假设弛豫时间是一个常数，可得：
+        \begin{equation*}
+            \eta=n m {\tau}_{0} \overline{v}_{1}^{2}=n k_{B} T {\tau}_{0}
+        \end{equation*}
+        弛豫时间与分子自由程应当量级相当，因此：
+        \begin{equation*}
+            \eta \sim n k_{B} T \frac{\overline{\lambda}}{\overline{v}}\sim\sqrt{T}
+        \end{equation*}
 
 \end{frame}
 \begin{frame}
     \frametitle{自由电子气电导率}
-    
+        简单来说，可以定义电导率为：
+        \begin{equation*}
+            \sigma=\frac{J}{E}
+        \end{equation*}
+        电流密度$J$可以看成电子在外电场$E$输运现象，设电流与外场都沿$z$轴方向：
+        \begin{equation*}
+            J=(-e) \int f v \frac{2 m^{3}}{h^{3}} d \vec{v}
+        \end{equation*}
+        无外场下，电子的分布函数可以用如下的费米分布进行刻画：
+        \begin{equation*}
+            f^{(0)}=\frac{1}{e^{\beta\left(\frac{1}{2} m {v}^{2}-\mu\right)}+1}
+        \end{equation*}
+        外场下，引入一级修正，可以得到：
+        \begin{equation*}
+            f^{(1)}=-\tau_{0} \nabla_{\vec{v}}\left(f^{(0)} \dot{\vec{v}}\right)
+        \end{equation*}
+
 \end{frame}
 \section{热寂说}
 \subsection{为什么会热寂？}
