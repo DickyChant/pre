@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.9.5)  29 MAY 2019 11:00
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.9.5)  29 MAY 2019 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1975,11 +1975,11 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1997,6 +1997,10 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [5
 
 ]
+Overfull \vbox (1.93507pt too high) detected at line 136
+ []
+
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2004,6 +2008,10 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [6
 
 ]
+Overfull \vbox (4.68222pt too high) detected at line 169
+ []
+
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2011,6 +2019,10 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [7
 
 ]
+Overfull \vbox (1.93784pt too high) detected at line 196
+ []
+
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2046,6 +2058,9 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [12
 
 ]
+File: figuras/image-20190529174507329.png Graphic file (type bmp)
+<figuras/image-20190529174507329.png>
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2053,6 +2068,10 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [13
 
 ]
+Overfull \vbox (2.49141pt too high) detected at line 342
+ []
+
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2088,11 +2107,22 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [18
 
 ]
+Overfull \vbox (12.11867pt too high) detected at line 413
+ []
+
+
 Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 [][] 
  []
 
 [19
+
+]
+Overfull \hbox (1.76997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
 
 ]
 \tf@nav=\write8
@@ -2104,21 +2134,21 @@ Overfull \hbox (1.76997pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `pre.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./pre.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `pre.out' has not changed.
-(rerunfilecheck)             Checksum: 44B9DE688B0E476B890D4A1B3119B1A5.
+(rerunfilecheck)             Checksum: 79EA3DDCFFD10C80ADC1923DDB8887A4.
  ) 
 Here is how much of TeX's memory you used:
- 43152 strings out of 492970
- 910954 string characters out of 6133939
- 1030514 words of memory out of 5000000
- 46444 multiletter control sequences out of 15000+600000
- 537414 words of font info for 60 fonts, out of 8000000 for 9000
+ 43204 strings out of 492970
+ 912488 string characters out of 6133939
+ 1030522 words of memory out of 5000000
+ 46489 multiletter control sequences out of 15000+600000
+ 537430 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 64i,20n,85p,10442b,817s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,20n,85p,10442b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pre.pdf (19 pages).
+Output written on pre.pdf (20 pages).
